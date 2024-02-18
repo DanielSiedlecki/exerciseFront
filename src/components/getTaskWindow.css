@@ -1,0 +1,10 @@
+
+.response-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.settings-container li, .lastTask-container li {
+    display: flex;
+    flex-direction: column;
+}
