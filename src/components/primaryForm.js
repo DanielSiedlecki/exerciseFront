@@ -63,6 +63,7 @@ function PrimaryForm() {
       const fetcher = new taskService();
       const response = await fetcher.post(data);
       alert("Create task");
+      console.log(response.data);
       setResponseData(response.data);
     } catch (error) {
       console.log(error);
@@ -110,7 +111,7 @@ function PrimaryForm() {
           <div className="response-container">
             <ul>
               <h2>Task</h2>
-              <li>Task Name: {responseData.taskName}</li>
+              <li>Task Name: {taskName}</li>
               <li>Today date: {responseData.todayDate}</li>
               <li>First Execution Date: {responseData.firstExecutionDate}</li>
               <li>Last Execution Date: {responseData.lastExecutionDate}</li>
